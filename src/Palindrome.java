@@ -1,7 +1,7 @@
 public class Palindrome {
 
     public static void main(String[] args) {
-        String originalStr = "Gadag";
+        String originalStr = "gadag";
         char originalCha[] = originalStr.toCharArray();
         int lengthOfCha = originalCha.length;
         //create another char array characters in reverse order

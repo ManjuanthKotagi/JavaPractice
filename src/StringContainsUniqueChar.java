@@ -1,7 +1,7 @@
 public class StringContainsUniqueChar {
 
     public static void main(String[] args) {
-        String x = "AB";
+        String x = "AA";
         char[] y = x.toCharArray();
         int size = y.length;
         int i = 0;
