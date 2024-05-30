@@ -1,27 +1,17 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import javax.sound.midi.Soundbank;
 
 public class PracticeClass {
 
     public static void main(String[] args) {
-        String str = "abcdefg";
-        char[] x = str.toCharArray();
-        int size = x.length;
-        int i = 0, j = 0;
-        while (i < size) {
-            j = i + 1;
-            while (j < size) {
-                if (x[i] != x[j]) {
-                    j++;
-                }
-                else{
-                    System.out.println("String doesn't contain unique char");
-                    System.exit(0);
-                }
-            }
-            i++;
-        }
-        System.out.println("String contain unique characters");
+        String str1 = "Cypress";
+        String str2 = "Selenium";
+        str1 = str1+str2;
+        System.out.println("Concatenated string is " + str1);
+        System.out.println("Str Length " + str1.length());
 
+        str2 = str1.substring(0, str1.length()-str2.length());
+        str1 = str1.substring(str2.length());
+        System.out.println("Swapped String Str1 : " + str1);
+        System.out.println("Swapped String Str2 : " + str2);
     }
-
 }

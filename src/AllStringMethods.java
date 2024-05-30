@@ -12,6 +12,22 @@ public class AllStringMethods {
         char character = str.charAt(8);
         System.out.println("8th character of the string is : " + character);
 
+        //substring usage by giving starting and ending index
+        String substring = str.substring(1,6);
+        System.out.println("Substring with starting and ending index " + substring);
+
+        //substring usage by giving starting index
+        String substring1 = str.substring(6);
+        System.out.println("Substring with Starting index " + substring1);
+
+        //will give you the index of the character
+        //The indexOf() method returns the position of the first occurrence of specified character(s) in a string.
+        System.out.println("Index is " + str.indexOf("l"));
+        System.out.println("Index is " + str.indexOf("love"));
+
+
+
+
 
     }
 }

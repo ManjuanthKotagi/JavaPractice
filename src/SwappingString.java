@@ -10,4 +10,7 @@ public class SwappingString {
         a = a.substring(b.length());
         System.out.println("After swap : " + a + b);
     }
+
+    //a = codingninjas
+    //b= a.length()-b.length(); 12-6
 }
