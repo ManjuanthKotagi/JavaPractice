@@ -6,7 +6,7 @@ public class SwappingString {
         String b = "ninjas";
         System.out.println("Before Swapping " + a  +b);
         a = a+b;
-        System.out.println("Concatinated String is " + a);
+        System.out.println("Concatenated String is " + a);
         System.out.println(a.length()-b.length());
         b = a.substring(0, a.length()-b.length());
         a = a.substring(b.length());

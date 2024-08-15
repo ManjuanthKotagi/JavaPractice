@@ -3,7 +3,7 @@ package stringsProgram;
 public class AllStringMethods {
 
     public static void main(String[] args) {
-        
+
         String str = "I love java and Selenium";
 
         String str1 = "bava";
@@ -18,7 +18,7 @@ public class AllStringMethods {
         System.out.println("8th character of the string is : " + character);
 
         //substring usage by giving starting and ending index
-        String substring = str.substring(1,6);
+        String substring = str.substring(1, 6);
         System.out.println("Substring with starting and ending index " + substring);
 
         //substring usage by giving starting index
@@ -30,15 +30,11 @@ public class AllStringMethods {
         System.out.println("Index is " + str.indexOf("l"));
         System.out.println("Index is " + str.indexOf("love"));
 
-        if(str1.compareTo(str2)==0){
+        if (str1.compareTo(str2) == 0) {
             System.out.println("Strings are equal");
+        } else {
+            System.out.println("strings are not equal");
         }
-        else{
-            System.out.println("strings are not equla");
-        }
-
-
-
 
 
     }
