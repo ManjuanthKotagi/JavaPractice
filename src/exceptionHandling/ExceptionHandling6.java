@@ -11,9 +11,9 @@ public class ExceptionHandling6 {
         {
             System.out.println("NullPointerException occurred");
         }
-        catch (Exception e)
-        {
-            System.out.println("ParentException will be called");
-        }
+//        catch (Exception e)
+//        {
+//            System.out.println("ParentException will be called");
+//        }
     }
 }

@@ -28,6 +28,6 @@ public class SumOfEvenAndOdd {
             }
         }
         System.out.println("Sum of Even Numbers " + evenNumSum);
-        System.out.println("Sum of Even Numbers " + oddNumSum);
+        System.out.println("Sum of odd Numbers " + oddNumSum);
     }
 }
