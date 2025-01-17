@@ -36,6 +36,5 @@ public class AllStringMethods {
             System.out.println("strings are not equal");
         }
 
-
     }
 }
