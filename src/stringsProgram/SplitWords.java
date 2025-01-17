@@ -1,7 +1,5 @@
 package stringsProgram;
 
-import java.util.Arrays;
-
 public class SplitWords {
 
     public static void main(String[] args) {
