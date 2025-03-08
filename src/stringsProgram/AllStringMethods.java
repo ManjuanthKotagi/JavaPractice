@@ -8,7 +8,6 @@ public class AllStringMethods {
 
         String str1 = "bava";
         String str2 = "Java";
-
         //check the length of the string
         int strLength = str.length();
         System.out.println(strLength);
