@@ -1,5 +1,6 @@
 package integerPrograms;
 
+//Program to find the largest number from the given array without using any built in function
 public class FindLargestNumberWithoutUsingAnyFunction {
 
     public static void main(String[] args) {

@@ -1,27 +1,24 @@
 package stringsProgram;
 
+//Write a java program to count the characters, special characters, and integers
 public class CountChSpecialChAndIntegerCh {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         String str = "12Yut6Gfs $th^7";
-        char[] x = str.toCharArray();
-        int size = x.length;
-        int i=0;
-        int charCount=0;
-        int specialChar=0;
-        int integerCount=0;
-        while(i<size){
-            if(x[i]>='A' && x[i]<='Z' || x[i]>='a' && x[i]<='z'){
+        char[] chars = str.toCharArray();
+        int length = chars.length;
+
+        int charCount = 0;
+        int specialChar = 0;
+        int integerCount = 0;
+
+        for (int i = 0; i < length; i++) {
+            if (chars[i] >= 'A' && chars[i] <= 'Z' || chars[i] >= 'a' && chars[i] <= 'z') {
                 charCount++;
-                i++;
-            }
-            else if(x[i]>='1' && x[i]<='9'){
+            } else if (chars[i] >= '1' && chars[i] <= '9') {
                 integerCount++;
-                i++;
-            }
-            else{
+            } else {
                 specialChar++;
-                i++;
             }
         }
         System.out.println("Char count is " + charCount);

@@ -1,37 +1,32 @@
 package stringsProgram;
 
+//Write a java program to remove the space in between the string
 public class RemoveSpaceInString {
 
     public static void main(String[] args) {
+        String str = "Java Programming Language";
+        char[] chars = str.toCharArray();
+        int length = chars.length;
+        int spaceCount = 0;
 
-        String x = "I Love Java";
-        char y[] = x.toCharArray();
-        int size = y.length;
-        int i = 0;
-        int j=0;
-        int spaceCount=0;
-
-
-        //count the spaces
-        while(i!=size){
-            if(y[i]==' '){
+        for (int i = 0; i < length; i++) {
+            if (chars[i] == ' ') {
                 spaceCount++;
             }
-            i++;
         }
 
-        //initializing i again 0 and creating new char array with size-spaceCount to avoid junk values at the end;
-        i=0;
-        char z[] = new char[size-spaceCount];
-        while (i != size) {
-            if(y[i]!= ' '){
-                z[j]=y[i];
-                j++;
+        System.out.println("spaceCount" + spaceCount);
+
+        char[] updatedChars = new char[length - spaceCount];
+        int index = 0;
+
+        for (int i = 0; i < length; i++) {
+            if (chars[i] != ' ') {
+                updatedChars[index] = chars[i];
+                index++;
             }
-            i++;
         }
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
+        System.out.println(str);
+        System.out.println(updatedChars);
     }
 }

@@ -10,7 +10,7 @@ public class ReverseTheStringByWords {
 
         System.out.println(size);
 
-        for(int i=size-1;i>=0;i--) {
+        for (int i = size - 1; i >= 0; i--) {
             //System.out.println(words[i]);
             reversedString.append(words[i]).append(" ");
         }

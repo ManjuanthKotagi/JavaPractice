@@ -3,6 +3,8 @@ package stringsProgram;
 import java.util.HashMap;
 import java.util.Map;
 
+//Write a java program to find the occurrence of the word in the string
+//Write a java program to count the repetitive words in the string
 public class RepetitiveWordsCount {
 
     public static void main(String[] args) {

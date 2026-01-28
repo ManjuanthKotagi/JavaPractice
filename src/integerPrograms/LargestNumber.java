@@ -1,14 +1,16 @@
 package integerPrograms;
 
+//Write a java program to find the largest number?
 public class LargestNumber {
 
-    //Finding the largest number from the array
     public static void main(String[] args) {
-        int array[] = {10,25,5,15,35};
-        int largestNumber = array[0];
-        for (int i=0;i<array.length;i++){
-            if(array[i]>largestNumber){
-                largestNumber = array[i];
+        Integer[] numbers = {10, 25, 5, 15, 35};
+        int length = numbers.length;
+        int largestNumber = numbers[0];
+
+        for (int i = 0; i < length; i++) {
+            if (numbers[i] > largestNumber) {
+                largestNumber = numbers[i];
             }
         }
         System.out.println("Largest Number is : " + largestNumber);
