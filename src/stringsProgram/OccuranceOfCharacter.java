@@ -1,10 +1,9 @@
 package stringsProgram;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
+//Write a java program to find the occurrence of the characters in the string
 public class OccuranceOfCharacter {
 
     public static void main(String[] args) {

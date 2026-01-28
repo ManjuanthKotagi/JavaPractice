@@ -1,21 +1,21 @@
 package stringsProgram;
 
+//Write a java program to convert first letter of the word as uppercase
 public class FirstLetterUpperCase {
 
     public static void main(String[] args) {
 
-        String x = "in time tec";
-        char[] y = x.toCharArray();
-        int length = y.length;
-        y[0] = (char) (y[0] - 32);
-        int i = 1;
-        while (i != length) {
-            if (y[i] == ' ') {
-                y[i + 1] = (char) (y[i + 1] - 32);
+        String str = "java programming language";
+        char[] chars = str.toCharArray();
+        int length = chars.length;
+        chars[0] = (char) (chars[0] - 32);
+
+        for (int i = 0; i < length; i++) {
+            if (chars[i] == ' ') {
+                chars[i + 1] = (char) (chars[i + 1] - 32);
             }
-            i++;
         }
-        System.out.println(x);
-        System.out.println(y);
+        System.out.println(str);
+        System.out.println(chars);
     }
 }

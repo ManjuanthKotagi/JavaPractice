@@ -19,5 +19,9 @@ public class SortTheArrayElements {
         for (int i = 0; i < size; i++) {
             System.out.println(array[i]);
         }
+
+        System.out.println("smallest number is : " + array[0]);
+        System.out.println("highest number is : " + array[size-1]);
+        System.out.println("highest number is : " + array[size-2]);
     }
 }

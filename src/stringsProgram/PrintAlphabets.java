@@ -1,8 +1,7 @@
 package stringsProgram;
 
+// Write a java program to print alphabets from A to Z
 public class PrintAlphabets {
-
-    //Write a java program to print alphabets from A to Z
 
     public static void main(String[] args) {
         char i;

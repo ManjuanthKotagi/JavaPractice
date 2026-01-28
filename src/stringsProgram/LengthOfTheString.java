@@ -1,18 +1,21 @@
 package stringsProgram;
 
+//length of the string without using length function;
+//Write a java program to find the length of the string
 public class LengthOfTheString {
-    //length of the string without using length function;
+
     public static void main(String[] args) {
 
-        String str = "I Love Java";
+        String str = "Java Programming Language";
         str = str.concat("\0");
-        char[] x = str.toCharArray();
-        int i=0;
+        char[] chars = str.toCharArray();
         int length = 0;
-        while(x[i]!='\0'){
-            length++;
-            i++;
+
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] != '\0') {
+                length = length + 1;
+            }
         }
-        System.out.println("Lenth of the String is : " + length);
+        System.out.println("Length of the String is : " + length);
     }
 }

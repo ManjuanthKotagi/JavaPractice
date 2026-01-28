@@ -1,9 +1,10 @@
 package integerPrograms;
 
+//Write a java program to check given number is prime number or not?
 public class FindPrimeNumberOrNot {
 
     public static void main(String[] args) {
-        int number = 8;
+        int number = 3;
         int count = 0;
 
         for (int i = 0; i < number; i++) {

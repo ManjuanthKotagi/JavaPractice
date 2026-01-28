@@ -1,21 +1,20 @@
 package stringsProgram;
 
+//Write a java program  for reverse the string
 public class ReverseTheString {
 
     public static void main(String[] args) {
-        String originalStr = "I love java";
-        char originalCha[] = originalStr.toCharArray();
-        int lengthOfCha = originalCha.length;
+        String str = "Java Programming Language";
+        char[] chars = str.toCharArray();
+        int lengthOfCha = chars.length;
         //create another char array characters in reverse order
-        char reverseCha[] = new char[lengthOfCha];
-        int i = 0;
-        while (i!=lengthOfCha) {
-            reverseCha[lengthOfCha-1-i] = originalCha[i];
-            i++;
+        char[] reverseChars = new char[lengthOfCha];
+
+        for (int i = 0; i < lengthOfCha; i++) {
+            reverseChars[lengthOfCha - 1 - i] = chars[i];
         }
-        String reverseString = new String(reverseCha);
-        System.out.println(originalStr);
-        System.out.println(reverseString);
-        System.out.println(originalStr.length());
+
+        System.out.println(str);
+        System.out.println(reverseChars);
     }
 }

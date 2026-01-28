@@ -1,11 +1,11 @@
 package stringsProgram;
 
+//Write a java program to compare two strings without using strings function
 public class CompareTwoStringWithoutStringFunction {
 
-    //Comparison of two strings without using inbuilt function
     public static void main(String[] args) {
         String str1 = "Java";
-        String str2 = "java";
+        String str2 = "Java";
 
         char[] ch1 = str1.toCharArray();
         char[] ch2 = str2.toCharArray();
@@ -13,33 +13,17 @@ public class CompareTwoStringWithoutStringFunction {
         int ch1size = ch1.length;
         int ch2size = ch2.length;
 
-        int i = 0, j = 0;
-
         //by the length of the string, if strings size are different no need of comparison
-        if(ch1size!=ch2size){
+        if (ch1size != ch2size) {
             System.out.println("String size is not equal, hence strings will not be same");
             System.exit(0);
         }
 
-        while (i < ch1size) {
-            if (ch1[i] == ch2[i]) {
-                i++;
-            }
-            else{
+        for (int i = 0; i < ch1.length; i++) {
+            if (ch1[i] != ch2[i]) {
                 System.out.println("Strings are not equal");
                 System.exit(0);
             }
-        }
-        System.out.println("Strings are equal");
-
-        //OR
-
-        while(i< ch1size){
-            if(ch1[i]!=ch2[i]){
-                System.out.println("Strings are not equal");
-                System.exit(0);
-            }
-            i++;
         }
         System.out.println("Strings are equal");
     }

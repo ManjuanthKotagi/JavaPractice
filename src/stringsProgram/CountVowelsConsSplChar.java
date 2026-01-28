@@ -1,46 +1,29 @@
 package stringsProgram;
 
+//Write a java program to count the vowels, consonants and special characters
 public class CountVowelsConsSplChar {
 
     public static void main(String[] args) {
 
-        String x = "I Love java And Selenium";
-        char[] y = x.toCharArray();
-        int size = y.length;
-        int vowelcnt = 0;
-        int conscnt = 0;
-        int splcnt = 0;
-        //convert all the letters to uppercase or lowercase
-        int i = 0;
-        while (i != size) {
-            if (y[i] != ' ') {
-                if (y[i] >= 'a' && y[i] <= 'z') {
-                    y[i] = (char) (y[i] - 32);
-                }
-            }
-            i++;
-        }
-        i=0;
-        while (i != size) {
-            if (y[i] != 'A' && y[i] <= 'Z') {
-                if (y[i] == 'A' || y[i] == 'E' || y[i] == 'I' || y[i] == 'O' || y[i] == 'U') {
-                 vowelcnt++;
-                 i++;
-                }
-                else{
-                    conscnt++;
-                    i++;
-                }
-            }
-            else {
-                splcnt++;
-                i++;
+        String str = "abc&";
+        char[] chars = str.toUpperCase().toCharArray();
+        int length = chars.length;
+        int vowelsCount = 0;
+        int consonantsCount = 0;
+        int specialCharCount = 0;
+
+        for (int i = 0; i < length; i++) {
+            if (chars[i] == 'A' || chars[i] == 'E' || chars[i] == 'I' || chars[i] == 'O' || chars[i] == 'U') {
+                vowelsCount++;
+            } else if (chars[i] >= 'A' && chars[i] <= 'Z') {
+                consonantsCount++;
+            } else {
+                specialCharCount++;
             }
         }
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println("Vowels Are: " + vowelcnt);
-        System.out.println("Consonants Are: " + conscnt);
-        System.out.println("Special Characters Are: " + splcnt);
+
+        System.out.println("Vowels Counts : " + vowelsCount);
+        System.out.println("Consonants Counts : " + consonantsCount);
+        System.out.println("Special Characters Counts : " + specialCharCount);
     }
 }

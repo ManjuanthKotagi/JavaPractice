@@ -2,6 +2,7 @@ package integerPrograms;
 
 import java.util.Arrays;
 
+//Write a java program to push the zeros at the beginning of the given array {8,0,8,7,6,0,4,0,3}
 public class PushAllTheZerosAtTheBeginningByFunction {
 
     public static void main(String[] args) {
